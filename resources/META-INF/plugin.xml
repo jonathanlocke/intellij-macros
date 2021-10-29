@@ -1,0 +1,37 @@
+<idea-plugin>
+
+    <id>main.java.macros</id>
+    <name>Jonathan's Design Pattern Macros</name>
+    <version>1.0</version>
+
+    <vendor email = "jonathanl@telenav.com" url = "https://www.telenav.com">Telenav, Inc.</vendor>
+
+    <description>
+        <![CDATA[
+      Macros that apply design patterns to Java code.
+    ]]>
+    </description>
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>1.0.0</b> Initial version.</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build = "173.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs = "com.intellij">
+        <defaultLiveTemplates file = "/liveTemplates/JavaDesignPatterns.xml"/>
+        <liveTemplateMacro implementation = "com.telenav.intellij.WithMacro"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
+

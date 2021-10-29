@@ -1,0 +1,12 @@
+<templateSet group = "Design Patterns">
+    <template name = "JAVA-DESIGN-PATTERNS-WITH-X"
+              value = "$TEXT$"
+              description = "Design patterns - Add copy constructor, copy() method and withX() methods"
+              toReformat = "true"
+              toShortenFQNames = "false">
+        <variable name = "TEXT" expression = "withMacro()" defaultValue = "[default value]" alwaysStopAt = "true"/>
+        <context>
+            <option name = "JAVA-DESIGN-PATTERNS-CONTEXT" value = "true"/>
+        </context>
+    </template>
+</templateSet>
